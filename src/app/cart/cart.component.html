@@ -1,0 +1,60 @@
+ 
+            <!-- cart section -->
+            <div  style="margin-top: 180px ;"  class="container ">
+                <div style="margin-bottom: 220px;" class="row">
+                    <div class="col-lg-8 border rounded  mb-5">
+                        <!-- table for display items -->
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Image</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Action</th>
+            
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr  *ngFor="let cart of allCart ; let i=index " >
+                                    <th>{{i+1}}</th>
+                                    <th><img height="50px" width="50px" [src]="cart.image" alt=""> {{cart.name}}</th>
+                                    <th>
+                                        <input type="num" class="form-control" value="1" style="max-width: 3rem;">
+                                    </th>
+                                    <th>{{cart.price}}$</th>
+                                    <th>
+                                        
+                                            <button (click)="removeCartItem(cart)" class="btn btn-outline-dark" ><i class="fa-solid fa-trash"></i></button>
+                                        
+                                    </th>
+            
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="mb-3" style="float: right; ">
+                            <button  class="btn btn-danger ms-4">Empty Cart</button>
+                        </div>
+            
+                    </div>
+                    <div class="col-lg-1"></div>
+            
+                    <div class="col-lg-3  p-3 mb-4">
+                        <h3>Total Cost : <span class="text-dark">{{Grandtotal | number:'1.2-2'}}$</span></h3>
+                        <p>Discount: <span></span></p>
+                        <h4 >
+                            <p> Grand Total: <span class="text-success"> $</span></p>
+                        </h4>
+                        <hr>
+            
+                        <div class="mt-5">
+                            <a   data-bs-toggle="modal" data-bs-target="#staticBackdrop" class=" btn btn-link" >Offers</a>
+                            <button style="float: right;" data-bs-toggle="modal" data-bs-target="#checkoutModal" class="btn btn-success" >Checkout</button>
+            
+                        </div>
+            
+                        
+                    </div>
+                </div>
+            </div>
+            

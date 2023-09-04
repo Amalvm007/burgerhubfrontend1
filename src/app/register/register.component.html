@@ -1,0 +1,55 @@
+
+
+
+
+<div class="container mt-5 ">
+  
+    <div class="row " >
+      <div class=" image col-lg-6">
+         
+        <div  >
+          <img   src="https://img.freepik.com/premium-photo/falling-ham-burger-with-floating-ingredients-3d-design-realistic-burger-abstract-background_667286-290.jpg?w=2000" alt="">
+        </div>
+  
+      </div>
+      <div class="  col-lg-6 mt-4">
+        <div class=" form border p-5 mt-5 mb-5">
+          <form class=""  (ngSubmit)="register()"  [formGroup]="registerForm" >
+            <div class="form-floating">
+                <input   name="uname" formControlName="uname"  type="text" placeholder="Username" class="form-control" >
+                <label for="">Username</label>
+            </div>
+             <!-- invaild Username -->
+             <div *ngIf="this.registerForm.get('uname')?.errors && this.registerForm.get('uname')?.touched" class="text-danger mt-2 ms-2">Invaild Username </div>
+             <!-- invaild Username -->
+              <div class="form-floating mt-3">
+                  <input  name="phone" formControlName="phone"  type="text" placeholder="Phone Number" class="form-control" >
+                  <label for="">Phone Number</label>
+              </div>
+               <!-- invaild Phone Number -->
+             <div *ngIf="this.registerForm.get('phone')?.errors && this.registerForm.get('phone')?.touched" class="text-danger mt-2 ms-2">Invaild Phone Number </div>
+             <!-- invaild Phone Number-->
+              <div class="form-floating mt-3">
+                  <input  name="pswd" formControlName="pswd"  type="password" placeholder="Password" class="form-control" >
+                  <label for="">Password</label>
+              </div>
+               <!-- invaild Password -->
+             <div *ngIf="this.registerForm.get('pswd')?.errors && this.registerForm.get('pswd')?.touched" class="text-danger mt-2 ms-2">Invaild Password </div>
+             <!-- invaild Password -->
+              <div class="mt-4">
+                  <button class="btn btn-outline-dark">
+                      
+                    Register
+                  </button>
+                  <br>
+                 
+      
+              </div>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,15 @@
+.row{
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+img{
+    width: 500px;
+    border-radius: 50px;
+   
+}
+.form{
+    background-color: hsl(26, 23%, 88%);
+    border-radius: 10px;
+}
+

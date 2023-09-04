@@ -1,0 +1,23 @@
+span{
+    color:#cc3333;
+    font-size: 50px;
+    
+   
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 0;
+
+}
+h1{
+    color: #2a435d;
+    font-size: 60px;
+    font-weight: 900;
+}
+.img :hover{
+    transition: 1;
+  transform: scale(.8);
+ 
+}

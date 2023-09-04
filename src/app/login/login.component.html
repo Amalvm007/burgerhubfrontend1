@@ -1,0 +1,57 @@
+
+<!-- loading spiners -->
+<div *ngIf="successMsg" class="ring">Loading
+    <span></span>
+  </div>
+  <!-- loading spiners -->
+  
+  
+  <div *ngIf="maindiv" class="container mt-5 ">
+    
+    <div class="row " >
+      <div class=" image col-lg-6">
+         
+        <div  >
+          <img   src="https://i.gifer.com/4rv8.gif" alt="">
+        </div>
+  
+      </div>
+      <div class="  col-lg-6 mt-4">
+        <div class=" form border p-5 mt-5 mb-5">
+          <form (ngSubmit)="login()" class="" [formGroup]="loginForm" >
+            <div class="form-floating">
+                <input name="phone" formControlName="phone" type="text" placeholder="Phone Number" class="form-control" >
+                <label for="">Phone Number</label>
+            </div>
+            <!-- invaild Phone number -->
+            <div *ngIf="this.loginForm.get('phone')?.errors && this.loginForm.get('phone')?.touched" class="text-danger mt-2 ms-2">Invaild phone number</div>
+            <!-- invaild Phone number -->
+            <div class="form-floating mt-3">
+                <input name="pswd" formControlName="pswd" type="password" placeholder="Password" class="form-control" >
+                <label for="">Password</label>
+    
+            </div>
+             <!-- invaild Password -->
+             <div *ngIf="this.loginForm.get('pswd')?.errors && this.loginForm.get('pswd')?.touched" class="text-danger mt-2 ms-2">Invaild Password </div>
+             <!-- invaild Password -->
+    
+             <!-- errorMsg -->
+             <div class="text-danger mt-2">{{errorMsg}}</div>
+            <div class="mt-4">
+                <button class="btn btn-outline-dark" type="submit" >
+                    Login
+                </button>
+                <br>
+                <div>
+                    <a class="register  mt-3" routerLink="/register" type="button">New users? Create an account</a>
+                </div>
+    
+            </div>
+        </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito+Sans:wght@300&family=Poppins:wght@400;500&family=Roboto+Slab:wght@300&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff8ee;
+   
+}
+
+.anchortag{
+    text-decoration: none;
+    color: #2a435d;
+}
+.anchortag:hover{
+    color:#cc3333;
+    cursor: pointer;
+}
+.modal{
+    margin-top: 200px;
+}
+
+.card-img-top{
+    transition: 1s;
+}
+
+.card-img-top:hover{
+    transform: scale(.9);
+    transition: .5s;
+    cursor: pointer;
+ 
+}

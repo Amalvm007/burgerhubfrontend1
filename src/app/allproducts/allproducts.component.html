@@ -1,0 +1,54 @@
+  
+  <!-- Header-->
+  <header class=" py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class=" d-flex ">
+           <div class=" title col-lg-6">
+                <h1 class=" animate__animated animate__backInDown text-center my-5">  <span *ngIf="user"> Hello {{username}}</span>  <br> ENJOY THE BEST  <span class="animate__animated">BURGER</span> @ <br>  BURGER HUB</h1>
+           </div>
+              <div class=" image col-lg-6">
+                <img class="animate__animated animate__tada " width="500px" src="http://burgerhubthrissur.com/assets/images/menu-item/burger-promo.png" alt="">
+    
+              </div>
+        </div>
+    </div>
+</header>
+<!-- sub titles -->
+<section style="margin-left: 100px;">
+    <div class=" ">
+        <h1>Popular <span>Dishes</span></h1>
+    </div>
+</section>
+<!-- Section-->
+
+
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" *ngFor="let product of products ">
+                <div class="card h-100 p-2">
+                    <!-- Product image-->
+                    <img height="250px" class="card-img-top" [src]="product.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                           <a class="anchortag"  > <h5 class="fw-bolder"   >{{product.name}} </h5></a>
+                            <!-- Product price-->
+                           Price: {{product.price}}$ <br>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button (click)="addToCart(phone,product)"  class="btn btn-success mb-2"   > Add</button>
+
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+

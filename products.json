@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "name": "Classic Cheeseburger",
+      "image": "https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg",
+      "price": 9.99,
+      "rating": 4.5,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 2,
+      "name": "Double Bacon Burger",
+      "image": "https://frontporchpantry.com/cdn/shop/products/baconcheeseburger_600x.png?v=1630093666",
+      "price": 12.99,
+      "rating": 4.8,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 3,
+      "name": "Cheese Sticks",
+      "image": "https://natashaskitchen.com/wp-content/uploads/2023/05/Cheese-Sticks-SQ.jpg",
+      "price": 8.99,
+      "rating": 4.2,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 4,
+      "name": "Mushroom Swiss Burger",
+      "image": "https://bestbeefrecipes.com/wp-content/uploads/2023/06/mushroom-swiss-burger-featured.jpg",
+      "price": 10.99,
+      "rating": 4.6,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 5,
+      "name": "BBQ Bacon Burger",
+      "image": "https://www.mantitlement.com/wp-content/uploads/2020/03/bbq-bacon-turkey-burgers-feature.jpg",
+      "price": 11.99,
+      "rating": 4.4,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 6,
+      "name": "Gourmet Burger",
+      "image": "https://bestbeefrecipes.com/wp-content/uploads/2022/06/loaded-burgers-featured.jpg",
+      "price": 13.99,
+      "rating": 4.7,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 7,
+      "name": "Classic Club Sandwich",
+      "image": "https://www.jocooks.com/wp-content/uploads/2020/10/club-sandwich-1-9.jpg",
+      "price": 15,
+      "rating": 4,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 8,
+      "name": "Roast Beef Sub",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBXp1s4hkRmZpZt20NYzzsQIVagEGXFlIU1A&usqp=CAU",
+      "price":10,
+      "rating": 4.7,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 9,
+      "name": "Chicken Wings",
+      "image": "https://tastesbetterfromscratch.com/wp-content/uploads/2014/09/Baked-Chicken-Wings-3.jpg",
+      "price": 12,
+      "rating": 4.7,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 10,
+      "name": "Chicken Shawarma",
+      "image": "https://bestbeefrecipes.com/wp-content/uploads/2022/06/loaded-burgers-featured.jpg",
+      "price": 12.2,
+      "rating": 4.7,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 11,
+      "name": "Mixed Shawarma",
+      "image": "https://www.licious.in/blog/wp-content/uploads/2022/06/shutterstock_1339636625-1.jpg",
+      "price": 14,
+      "rating": 4.7,
+      "hotelName": "Burger Joint"
+    },
+    {
+      "id": 12,
+      "name": "Samosa",
+      "image": "https://dwellbymichelle.com/wp-content/uploads/2021/03/DWELL-Samosa-Recipe.jpeg",
+      "price": 10,
+      "rating": 4.7,
+      "hotelName": "Burger Joint"
+    }
+  ]
